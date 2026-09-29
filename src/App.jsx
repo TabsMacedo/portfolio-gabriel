@@ -1,11 +1,13 @@
 import "./App.css";
+import { Menu } from "./components/Menu/Menu.jsx";
 
 function App() {
 
 
   return (
     <>
-      <h1>Ola</h1>
+      <Menu nome="Gabriel"/>
+      <Menu nome="Tabáta"/>
     </>
   )
 }
