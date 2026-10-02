@@ -1,0 +1,27 @@
+.navbar {
+  position: sticky;
+  display: flex;
+  align-items: center;
+}
+.navbarImg {
+}
+.navbarLogo {
+  color: var(--dark-cor-titulo);
+  font-family: var(--fonte-secundaria);
+}
+.navbarMenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
+.menuItem {
+  color: var(--dark-cor-link);
+  font-family: var(--fonte-secundaria);
+}
+.button {
+  margin-left: 50px;
+}
+.buttonItem {
+}

@@ -1,17 +1,17 @@
 :root {
   /* PALETA LIGHT */
-  --light-cor-titulo: #0B1020;
-  --light-cor-parag: #00A8C7;
-  --light-cor-link: #7047D9;
-  --light-cor-button: #FFFFFF;
-  --light-cor-highlight: #F5F7FF;
+  --light-cor-titulo: #0b1020;
+  --light-cor-parag: #00a8c7;
+  --light-cor-link: #7047d9;
+  --light-cor-button: #ffffff;
+  --light-cor-highlight: #f5f7ff;
 
   /* PALETA DARK */
-  --dark-cor-titulo: #F4F7FF;
-  --dark-cor-parag: #00E5FF;
-  --dark-cor-link: #8B5CFF;
+  --dark-cor-titulo: #f4f7ff;
+  --dark-cor-parag: #8b5cff;
+  --dark-cor-link: #c4c1c1;
   --dark-cor-button: #111827;
-  --dark-cor-highlight: #070A12;
+  --dark-cor-highlight: #070a12;
 
   /* FONTES */
   --fonte-principal: "Orbitron", sans-serif;

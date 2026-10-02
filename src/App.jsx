@@ -1,5 +1,5 @@
 import "./App.css";
-import { Menu } from "./components/Menu/Menu.jsx";
+import Menu from "./components/Menu/Menu.jsx";
 
 function App() {
 
@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <Menu nome="Gabriel"/>
-      <Menu nome="Tabáta"/>
     </>
   )
 }
