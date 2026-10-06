@@ -1,3 +1,14 @@
-body {
-  background-color: var(--dark-background);
+﻿.skip-link{
+	position: fixed;
+	top: -60px;
+	left: 20px;
+	z-index: 100;
+	padding: 12px 20px;
+	border-radius: 6px;
+	background-color: var(--cyan);
+	color: var(--background);
+}
+
+.skip-link:focus{
+	top: 12px;
 }

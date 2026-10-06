@@ -1,35 +1,67 @@
-.navbar {
+﻿.header{
   position: sticky;
   top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--line);
+  background-color: var(--background);
+}
+
+.nav{
   display: flex;
   align-items: center;
-  width: 100%;
-  background: rgba(7, 10, 18, 0.72);
-  z-index: 100;
-  border-bottom: 1px solid var(--dark-parag);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  justify-content: space-between;
+  min-height: 88px;
 }
-.navbarImg {
-}
-.navbarLogo {
-  color: var(--dark-title);
-  font-family: var(--font-secondary);
-}
-.navbarMenu {
+
+.logo{
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  gap: 50px;
-  margin-left: auto;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
 }
-.menuItem {
-  color: var(--dark-parag);
-  font-family: var(--font-secondary);
-  list-style: none;
+
+.mark{
+  color: var(--cyan);
+  font-family: var(--display);
+  font-size: 32px;
+  font-weight: 700;
 }
-.button {
-  margin-left: 50px;
+
+.logoSuffix{
+  color: var(--muted);
 }
-.buttonItem {
+
+.links{
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.links a:hover{
+  color: var(--cyan);
+}
+
+.contact{
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+}
+
+/* Em telas pequenas, os links continuam visíveis e podem quebrar a linha. */
+@media (max-width: 900px){
+  .nav{
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+  }
+
+  .links{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
 }

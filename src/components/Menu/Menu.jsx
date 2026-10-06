@@ -1,26 +1,39 @@
-import { useState } from "react";
-import styles from "./Menu.module.css";
+import styles from './Menu.module.css';
 
 export default function Menu({ nome }) {
-    const [closed, setClosed] = useState(0);
-    return (
-        <>
-            <nav className={styles.navbar}>
-                <img className={styles.navbarImg} src="" alt="" />
-                <p className={styles.navbarLogo}>{nome}</p>
-                <ul className={styles.navbarMenu}>
-                    <li className={styles.menuItem}>Sobre</li>
-                    <li className={styles.menuItem}>Projetos</li>
-                    <li className={styles.menuItem}>Habilidades</li>
-                    <li className={styles.menuItem}>Contato</li>
-                    <div><p>{closed}</p></div>
-                </ul>
-                <div className={styles.button}>
-                    <button className={styles.buttonItem}></button>
-                    <button className={styles.buttonItem}></button>
-                </div>
-            </nav>
+  return (
+    <header className={styles.header}>
+      <nav
+        className={`container ${styles.nav}`}
+        aria-label="Navegação principal"
+      >
+        <a href="#home" className={styles.logo}>
+          <span className={styles.mark} aria-hidden="true">
+            g<span>.</span>
+          </span>
+          {nome}
+          <span className={styles.logoSuffix}> / dev</span>
+        </a>
 
-        </>
-    )
+        <div className={styles.links}>
+          <a href="#home">
+            Início
+          </a>
+          <a href="#about">
+            Sobre
+          </a>
+          <a href="#projects">
+            Projetos
+          </a>
+          <a href="#skills">
+            Habilidades
+          </a>
+
+          <a href="#contact" className={styles.contact}>
+            Vamos conversar <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+  );
 }
