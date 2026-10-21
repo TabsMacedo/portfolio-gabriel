@@ -1,10 +1,10 @@
-﻿.footer{
+.footer{
 	padding-top: 65px;
 	border-top: 1px solid var(--line);
 	background-color: var(--surface);
 }
 
-.footer h2{
+.footer__title{
 	margin-top: 24px;
 	font-family: var(--display);
 	font-size: 56px;
@@ -13,25 +13,25 @@
 	letter-spacing: -2px;
 }
 
-.footer h2 span{
+.footer__title-highlight{
 	color: var(--cyan);
 }
 
-.description{
+.footer__description{
 	margin-top: 24px;
 	color: var(--muted);
 	font-size: 13px;
 	line-height: 1.9;
 }
 
-.channels{
+.footer__channels{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 30px;
 	margin-top: 40px;
 }
 
-.channels a, .pending{
+.footer__channel{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -42,20 +42,20 @@
 	font-size: 14px;
 }
 
-.channels a:hover{
+.footer__channel:hover{
 	color: var(--cyan);
 }
 
-.pending{
+.footer__channel--pending{
 	color: var(--muted);
 }
 
-.pending small{
+.footer__channel-status{
 	font-family: monospace;
 	font-size: 9px;
 }
 
-.bottom{
+.footer__bottom{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -65,7 +65,11 @@
 	font-size: 10px;
 }
 
-.signature{
+.footer__back-to-top{
+	color: inherit;
+}
+
+.footer__signature{
 	color: var(--cyan);
 	font-family: var(--display);
 	font-size: 24px;
@@ -76,17 +80,17 @@
 		padding-top: 50px;
 	}
 
-	.footer h2{
+	.footer__title{
 		font-size: 36px;
 		letter-spacing: -1px;
 	}
 
-	.channels{
+	.footer__channels{
 		grid-template-columns: 1fr;
 		gap: 16px;
 	}
 
-	.bottom{
+	.footer__bottom{
 		flex-direction: column;
 		align-items: flex-start;
 	}

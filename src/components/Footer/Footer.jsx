@@ -3,17 +3,17 @@ import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
-    <footer id="contact" className={styles.footer}>
+    <footer id="contact" className={styles['footer']}>
       <div className="container">
         <div>
           <div>
-            <p className="eyebrow">04 / PRÓXIMA CONEXÃO</p>
-            <h2>
+            <p className="eyebrow">03 / PRÓXIMA CONEXÃO</p>
+            <h2 className={styles['footer__title']}>
               Uma boa ideia começa
               <br />
-              com uma <span>conversa.</span>
+              com uma <span className={styles['footer__title-highlight']}>conversa.</span>
             </h2>
-            <p className={styles.description}>
+            <p className={styles['footer__description']}>
               Projetos, oportunidades ou uma troca de ideias.
               <br />
               Vamos construir algo interessante juntos.
@@ -22,57 +22,57 @@ export default function Footer() {
         </div>
 
         {/* Se o contato estiver vazio, mostramos "Em breve". */}
-        <div className={styles.channels}>
+        <div className={styles['footer__channels']}>
           {contact.email ? (
-            <a href={`mailto:${contact.email}`}>
+            <a className={styles['footer__channel']} href={`mailto:${contact.email}`}>
               <span>01 /</span>
               E-mail
               <span aria-hidden="true">↗</span>
             </a>
           ) : (
-            <div className={styles.pending}>
+            <div className={`${styles['footer__channel']} ${styles['footer__channel--pending']}`}>
               <span>01 /</span>
               E-mail
-              <small>EM BREVE</small>
+              <small className={styles['footer__channel-status']}>EM BREVE</small>
             </div>
           )}
 
           {contact.github ? (
-            <a href={contact.github} target="_blank" rel="noreferrer">
+            <a className={styles['footer__channel']} href={contact.github} target="_blank" rel="noreferrer">
               <span>02 /</span>
               GitHub
               <span aria-hidden="true">↗</span>
             </a>
           ) : (
-            <div className={styles.pending}>
+            <div className={`${styles['footer__channel']} ${styles['footer__channel--pending']}`}>
               <span>02 /</span>
               GitHub
-              <small>EM BREVE</small>
+              <small className={styles['footer__channel-status']}>EM BREVE</small>
             </div>
           )}
 
           {contact.linkedin ? (
-            <a href={contact.linkedin} target="_blank" rel="noreferrer">
+            <a className={styles['footer__channel']} href={contact.linkedin} target="_blank" rel="noreferrer">
               <span>03 /</span>
               LinkedIn
               <span aria-hidden="true">↗</span>
             </a>
           ) : (
-            <div className={styles.pending}>
+            <div className={`${styles['footer__channel']} ${styles['footer__channel--pending']}`}>
               <span>03 /</span>
               LinkedIn
-              <small>EM BREVE</small>
+              <small className={styles['footer__channel-status']}>EM BREVE</small>
             </div>
           )}
         </div>
 
-        <div className={styles.bottom}>
-          <a href="#home" className={styles.signature}>
+        <div className={styles['footer__bottom']}>
+          <a href="#home" className={styles['footer__signature']}>
             gabriel<span>.</span>
             <small>TAKAHATA</small>
           </a>
           <p>© 2026 · Feito com código e intenção.</p>
-          <a className={styles.back} href="#home">
+          <a className={styles['footer__back-to-top']} href="#home">
             DE VOLTA AO TOPO <span aria-hidden="true">↑</span>
           </a>
         </div>

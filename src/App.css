@@ -1,4 +1,4 @@
-﻿.skip-link{
+.app__skip-link{
 	position: fixed;
 	top: -60px;
 	left: 20px;
@@ -9,6 +9,6 @@
 	color: var(--background);
 }
 
-.skip-link:focus{
+.app__skip-link:focus{
 	top: 12px;
 }

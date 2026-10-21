@@ -1,13 +1,14 @@
 import './App.css';
 import Menu from './components/Menu/Menu.jsx';
 import Hero from './components/Hero/Hero.jsx';
-import Content from './components/Content/Content.jsx';
+import Projects from './components/Projects/Projects.jsx';
+import Skills from './components/Skills/Skills.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 export default function App() {
   return (
     <>
-      <a className="skip-link" href="#main">
+      <a className="app__skip-link" href="#main">
         Pular para o conteúdo
       </a>
 
@@ -15,7 +16,8 @@ export default function App() {
 
       <main id="main">
         <Hero />
-        <Content />
+        <Projects />
+        <Skills />
       </main>
 
       <Footer />
