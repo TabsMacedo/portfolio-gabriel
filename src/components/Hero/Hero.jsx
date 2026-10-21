@@ -32,7 +32,6 @@ export default function Hero() {
             </a>
           </div>
         </div>
-    // exemplo
         <div className={styles['hero__sphere-container']}>
           <HeroSphere />
         </div>
